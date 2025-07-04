@@ -1,0 +1,122 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow: auto;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    padding-left: 30px;
+    background-color: #FFA500;
+    color: white;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.content {
+    background-image: url(../imge/banner.png);
+    background-size: cover; /* 使背景图片覆盖整个容器 */
+    background-position: center; /* 使背景图片从容器中心开始 */
+    background-repeat: no-repeat; /* 防止背景图片重复 */
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-start; 
+    padding-left: 200px;
+    align-items: center;
+}
+
+
+.game-info {
+    text-align: left;
+}
+.game-info h1 {
+    font-family: "Arial", sans-serif;
+    color: #4f28c7; 
+    font-size: 24px; 
+    font-weight: bold; 
+}
+.game-info p {
+    font-family: "Arial", sans-serif;
+    color: #2419be; 
+    font-size: 16px; 
+}
+
+.store {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    /* 修改，使下载图片居中 */
+    margin-bottom: 20px;
+    /* 新增，为底部footer提供间隔 */
+}
+
+.store img {
+    max-width: 150px;
+    /* 新增，限制图片大小 */
+    height: auto;
+}
+.footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    background-color: #ADD8E6;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    /* 修改，使导航居中 */
+    width: 80%;
+    padding-bottom: 10px;
+}
+
+.email {
+    font-size: 0.8em;
+    margin-top: 10px;
+    /* 新增，提供与上面内容的间隔 */
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.split {
+    padding: 0 10px;
+    /* 新增，提供分割线两侧的间隔 */
+}
